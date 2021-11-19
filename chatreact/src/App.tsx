@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/chat" caseSensitive element={<Chat/>} />
+        <Route path="/chat" index={false} element={<Chat/>} />
       </Routes>
     </BrowserRouter>
   )

@@ -35,8 +35,9 @@ export function Chat() {
       chatRef.current.innerHTML += `
         <div className={${styles.messages}}>
           <div>
-            <strong>${data.username}: </strong> <p>${data.text}</p> <p>${dayjs(data.createdAt).format("DD/MM HH:mm")}</p>
+            <strong>${data.username}: </strong> <p>${data.text}</p> 
           </div>
+          <p>${dayjs(data.createdAt).format("DD/MM HH:mm")}</p>
         </div>
       `;
     }
